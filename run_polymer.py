@@ -25,7 +25,7 @@ os.environ["DIR_POLYMER_ANCILLARY"] = "/home/cameron/Projects/polymer_ancillary/
 
 
 
-sys.path.insert(0, '/home/cameron/Projects/polymer/')
+#sys.path.insert(0, '/home/cameron/Projects/polymer/')
 
 from polymer.main import run_atm_corr
 from polymer.level1 import Level1
