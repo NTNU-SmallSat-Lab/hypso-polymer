@@ -15,6 +15,16 @@ from hypso.write import write_l1c_nc_file
 
 #POLYMER_PATH = '/home/cameron/Projects/polymer/'
 
+
+
+import os
+
+os.environ["DIR_POLYMER_AUXDATA"] = "/home/cameron/Projects/polymer_auxdata/"
+os.environ["DIR_POLYMER_ANCILLARY"] = "/home/cameron/Projects/polymer_ancillary/"
+
+
+
+
 sys.path.insert(0, '/home/cameron/Projects/polymer/')
 
 from polymer.main import run_atm_corr
