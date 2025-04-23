@@ -15,13 +15,14 @@ from hypso.write import write_l1c_nc_file
 
 #POLYMER_PATH = '/home/cameron/Projects/polymer/'
 
-sys.path.insert(0, '/home/cameron/Projects/polymer/polymer/')
+sys.path.insert(0, '/home/cameron/Projects/polymer/')
 
 from polymer.main import run_atm_corr
 from polymer.level1 import Level1
 from polymer.level2 import Level2
 
-
+#source ~/.venv/bin/activate
+#python3 run_polymer.py /home/cameron/Documents/129.241.2.147:8009/image63N6E/image63N6E_2025-04-02T11-46-04Z/image63N6E_2025-04-02T11-46-04Z-l1a.nc /home/cameron/Documents/129.241.2.147:8009/image63N6E/image63N6E_2025-04-02T11-46-04Z/processing-temp/latitudes_indirectgeoref.dat /home/cameron/Documents/129.241.2.147:8009/image63N6E/image63N6E_2025-04-02T11-46-04Z/processing-temp/longitudes_indirectgeoref.dat
 
 
 def main(l1a_nc_path, lats_path=None, lons_path=None) -> np.ndarray:
