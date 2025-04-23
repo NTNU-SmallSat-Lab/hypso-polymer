@@ -11,7 +11,18 @@ import os
 from hypso import Hypso
 from hypso.write import write_l1c_nc_file
 
-POLYMER_PATH = '/home/cameron/Projects/polymer/'
+#sys.path.insert(0, '/home/cameron/Projects/hypso-package/hypso/')
+
+#POLYMER_PATH = '/home/cameron/Projects/polymer/'
+
+sys.path.insert(0, '/home/cameron/Projects/polymer/polymer/')
+
+from polymer.main import run_atm_corr
+from polymer.level1 import Level1
+from polymer.level2 import Level2
+
+
+
 
 def main(l1a_nc_path, lats_path=None, lons_path=None) -> np.ndarray:
 
